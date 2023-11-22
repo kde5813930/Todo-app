@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+// Color
+$black: #000;
+$light-purple : #b3adf6;
+$dark-purple : #20133a;
+$light-gray : #e6e4e4;
+$dark-gray : #545454;
+$yellow : #ffe771;
+$orange : #ffc560;
+
+body{
+  --color-text: #{$black};
+  --color-background: #{$light-purple};
+  --color-btn : #{$yellow};
+  --point-color: #{$yellow};
+}
+
+body{
+  &.dark{
+    --color-text: #{$orange};
+    --color-background: #{$dark-purple};
+    --color-btn : #{$dark-gray};
+    --point-color: #{$orange};
+  }
+}
+
+
+// Font Size
+$font-size-14: 1.4rem;
+$font-size-16: 1.6rem; 
+$font-size-18: 1.8rem; // default
+$font-size-20: 2rem;
+$font-size-24: 2.4rem;
+$font-size-30: 3rem;
+$font-size-45: 4.5rem;
+$font-size-55: 5.5rem;
+
+
+// Route
+$image: "../images/";
+
+
+//Background
+$bg-full-size: 100% 100%;
+
+
+
+// Break Point
+$media-mini-phone: 390px;
+$media-desktop: 1279px;

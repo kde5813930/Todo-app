@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+header{
+  width: 100%;
+  margin-bottom: 25px;
+  .title{
+    @include layout-flex;
+    margin-bottom: 20px;
+    font-size: $font-size-55;
+    font-weight: 500;
+    text-align: center;
+    &::after{
+      content: '';
+      display: inline-block;
+      width: 80px;
+      height: 50px;
+      margin-left: 15px;
+      background: url(#{$image}/bg_rainbow.png) no-repeat;
+      background-size: $bg-full-size;
+    }
+  }
+}
+
+.dark{
+  .title{
+    &::after{
+      width: 60px;
+      background: url(#{$image}/bg_flower.png) no-repeat;
+      background-size: $bg-full-size;
+    }
+  }
+}
+
+.btn-wrap{
+  @include layout-between;
+  ul{
+    display: flex;
+    li{
+      .btn-filter{
+        padding: 5px 15px;
+        font-size: $font-size-20;
+        font-weight: 500;
+      }
+      &.active{
+        .btn-filter{
+          border-radius: 15px;
+          background-color: var(--color-btn);
+        }
+      }
+    }
+  }
+  .btn-dark{
+    width: 50px;
+    height: 50px;
+    background: url(#{$image}/bg_dark_mode.png) no-repeat;
+    background-size: $bg-full-size;
+    font-size: 0;
+  }
+}
+
+.dark{
+  .btn-dark{
+    background: url(#{$image}/bg_light_mode.png) no-repeat;
+    background-size: $bg-full-size;
+  }
+}
+
+
+@include mobile{
+  header{
+    .title{
+      font-size: $font-size-45;
+    }
+  } 
+
+  .btn-wrap{
+    ul{
+      li{
+        .btn-filter{
+          padding: 3px 10px;
+          font-size: $font-size-18;
+        }
+        &.active{
+          .btn-filter{
+            border-radius: 15px;
+            background-color: var(--color-btn);
+          }
+        }
+      }
+    }
+    .btn-dark{
+      width: 40px;
+      height: 40px;
+    }
+  }
+}

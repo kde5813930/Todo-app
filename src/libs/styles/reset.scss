@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+/* Reset */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+button,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: 0;
+    font-size: $font-size-16;
+    color: var(--color-text);
+    font-weight: 400;
+    vertical-align: baseline;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -ms-text-size-adjust: none;
+}
+
+html {
+    font-size: 10px;
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    min-width: 320px;
+    height: 100%;
+    font-family: 'Gaegu KR';
+    font-weight: 500;
+    color: var(--color-text);
+    line-height: 1;
+    box-sizing: border-box;
+    background-color: var(--color-background);
+    padding:0 20px;
+}
+
+
+ol,
+ul {
+    list-style: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    color: var(--color-text);
+    text-decoration: none;
+    vertical-align: baseline;
+}
+
+img {
+    vertical-align: top;
+    max-width: 100%;
+}
+
+button {
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    font-family: 'Gaegu KR';
+    color: inherit;
+    line-height: 1;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+input {
+    margin: 0;
+    border: none;
+    // font-family: ;
+    font-size: $font-size-18;
+    font-family: 'Gaegu KR';
+    font-weight: 500;
+    color: var(--color-text);
+    vertical-align: top;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 48px;
+    padding: 13px 15px;
+    background-color: $light-gray;
+}
+
+input[type="text"]:focus{
+    outline: none;
+}   
+
+p {
+    line-height: 1.4;
+    white-space: pre-line;
+}
+
+.dark{
+    p{
+        color: $dark-gray;
+    }
+
+    input{
+        color: $dark-gray;
+    }
+}
